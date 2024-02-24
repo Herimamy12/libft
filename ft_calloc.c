@@ -23,6 +23,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	tmp = (char *)malloc(size * nmemb);
 	if (tmp == NULL)
 		return (NULL);
+	ft_bzero(tmp, nmemb);
 	ptr = (void *)tmp;
 	return (ptr);
 }

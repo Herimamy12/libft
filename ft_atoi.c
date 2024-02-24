@@ -21,6 +21,8 @@ int	ft_atoi(const char *nptr)
 	i = 0;
 	nbr = 0;
 	sign = 1;
+	while (nptr[i] == 32 || (9 <= nptr[i] && nptr[i] <= 13))
+		i++;
 	if (nptr[i] == '+' || nptr[i] == '-')
 	{
 		if (nptr[i] == '-')

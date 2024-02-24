@@ -21,11 +21,20 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	i = 0;
 	tdest = (unsigned char *)dest;
 	tsrc = (unsigned char *)src;
-	while (tsrc[i] && i < n)
+	if (src == NULL && dest == NULL)
+		return (NULL);
+	if (src <= dest)
 	{
-		tdest[i] = tsrc[i];
-		i++;
+		while (n-- > 0)
+			tdest[n] = tsrc[n];
 	}
-	dest = (void *)tdest;
-	return (dest);
+	else
+	{
+		while (n-- > 0)
+		{
+			tdest[i] = tsrc[i];
+			i++;
+		}
+	}
+	return ((void *)tdest);
 }
