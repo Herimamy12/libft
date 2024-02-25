@@ -38,7 +38,7 @@ char	**ft_split(char const *s, char c)
 	size_t	len;
 
 	i = 0;
-	str = (char **)malloc(sizeof(char *) * (ft_checkword(s, c) + 1))
+	str = (char **)malloc(sizeof(char *) * (ft_checkword(s, c) + 1));
 	if (!s || !str)
 		return (0);
 	while (*s)
@@ -51,7 +51,7 @@ char	**ft_split(char const *s, char c)
 				len = ft_strlen(s);
 			else
 				len = ft_strchr(s, c) - s;
-			str[i++] = ft_substr(s, 0, len)
+			str[i++] = ft_substr(s, 0, len);
 			s += len;
 		}
 	}
