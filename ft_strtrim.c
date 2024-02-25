@@ -14,7 +14,7 @@
 
 int	ft_checkcar(char c, char const *set)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (i < ft_strlen(set))
@@ -28,10 +28,9 @@ int	ft_checkcar(char c, char const *set)
 
 int	ft_countfirst(char const *s1, char const *set)
 {
-	int	i;
-	int	j;
-	int	count;
-	int	check;
+	size_t	i;
+	size_t	count;
+	size_t	check;
 
 	i = 0;
 	count = 0;
@@ -48,10 +47,9 @@ int	ft_countfirst(char const *s1, char const *set)
 
 int	ft_countlast(char const *s1, char const *set)
 {
-	int	i;
-	int	j;
-	int	count;
-	int	check;
+	size_t	i;
+	size_t	count;
+	size_t	check;
 
 	count = 0;
 	i = ft_strlen(s1);
