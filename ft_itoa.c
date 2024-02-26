@@ -29,28 +29,26 @@ int	ft_count(int n)
 
 char	*ft_itoa(int n)
 {
+	int		sign;
 	int		count;
 	char	*str;
 
+	sign = 0;
 	count = ft_count(n);
-	str = (char *)malloc(sizeof(char) * (count + 1));
-	if (str == NULL)
+	if (!(str = (char *)malloc(sizeof(char) * (count + 1))))
 		return (NULL);
-	str[count--] = '\0';
-	if (n == 0)
-	{
-		str[0] = '0';
-		return (str);
-	}
+	*(str + count) = '\0';
 	if (n < 0)
-		str[0] = '-';
-	while (n != 0)
 	{
-		if (str[0] == '-')
-			str[count--] = '0' + -(n % 10);
-		else
-			str[count--] = '0' + (n % 10);
+		sign = 1;
+		n *= -1;
+	}
+	while (count--)
+	{
+		*(str + count) = 48 + (n % 10);
 		n /= 10;
 	}
+	if (sign)
+		*str = 45;
 	return (str);
 }
