@@ -18,8 +18,8 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	char	*tmp;
 
 	ptr = NULL;
-	if (nmemb == 0 || size == 0)
-		return (NULL);
+//	if (nmemb == 0 || size == 0)
+//		return (NULL);
 	tmp = (char *)malloc(size * nmemb);
 	if (tmp == NULL)
 		return (NULL);
