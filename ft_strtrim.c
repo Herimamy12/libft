@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	ft_checkcar(char c, char const *set)
+static int	ft_checkcar(char c, char const *set)
 {
 	size_t	i;
 
@@ -26,7 +26,7 @@ int	ft_checkcar(char c, char const *set)
 	return (0);
 }
 
-int	ft_countfirst(char const *s1, char const *set)
+static int	ft_countfirst(char const *s1, char const *set)
 {
 	size_t	i;
 	size_t	count;
@@ -34,18 +34,18 @@ int	ft_countfirst(char const *s1, char const *set)
 
 	i = 0;
 	count = 0;
-	while (i < ft_strlen(s1))
+	while (s1[i])
 	{
 		check = ft_checkcar(s1[i], set);
 		if (check == 0)
-			i = ft_strlen(s1);
-		count += check;
+			return (count);
+		count++;
 		i++;
 	}
 	return (count);
 }
 
-int	ft_countlast(char const *s1, char const *set)
+static int	ft_countlast(char const *s1, char const *set)
 {
 	size_t	i;
 	size_t	count;
@@ -57,8 +57,8 @@ int	ft_countlast(char const *s1, char const *set)
 	{
 		check = ft_checkcar(s1[i - 1], set);
 		if (check == 0)
-			i = 0;
-		count += check;
+			return (count);
+		count++;
 		i--;
 	}
 	return (count);
@@ -66,19 +66,23 @@ int	ft_countlast(char const *s1, char const *set)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int		lf;
-	int		ll;
+	size_t	lf;
+	size_t	ll;
 	size_t	i;
 	size_t	len;
 	char	*trim;
 
 	i = 0;
-	if (!s1 || !set)
-		return (NULL);
+	if (!s1[i])
+		return (ft_strdup(""));
 	lf = ft_countfirst(s1, set);
 	ll = ft_countlast(s1, set);
 	len = ft_strlen(s1) - (lf + ll);
+	if (ll == ft_strlen(s1) || lf == ft_strlen(s1))
+		len = 0;
 	trim = (char *)malloc(sizeof(char) * (len + 1));
+	if (trim == NULL)
+		return (NULL);
 	while (i < len)
 	{
 		trim[i] = s1[lf + i];
