@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-size_t	ft_checkword(char const *s, char c)
+static size_t	ft_checkword(char const *s, char c)
 {
 	size_t	cw;
 
