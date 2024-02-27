@@ -34,6 +34,8 @@ SRC = \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
+		ft_lstnew_bonus.c \
+		ft_lstadd_front_bonus.c \
 
 OBJ = $(SRC:.c=.o)
 CC = gcc
