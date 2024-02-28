@@ -28,7 +28,7 @@ bonus: $(OBJSBONUS) $(OBJS)
 	ar rsc $(NAME) $^
 
 clean:
-	rm -f $(OBJS) $(OBJS_BONUS)
+	rm -f $(OBJS) $(OBJSBONUS)
 
 fclean: clean
 	rm -f $(NAME)
