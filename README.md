@@ -84,4 +84,4 @@ Si vous souhaitez contribuer à ce projet, n'hésitez pas à ouvrir un issue ou 
 
 ## License
 
-Ce projet est sous la licence **[Licence de l’École 42](https://www.42.fr/)**. Vous êtes libre de l'utiliser pour vos propres projets, mais ne pouvez pas le redistribuer à des fins commerciales.
+Ce projet est sous la **[Licence de l’École 42](https://www.42.fr/)**. Vous êtes libre de l'utiliser pour vos propres projets, mais ne pouvez pas le redistribuer à des fins commerciales.
