@@ -80,7 +80,7 @@ La partie Bonus du projet Libft inclut des fonctionnalités supplémentaires, te
    ```bash
       make bonus
 
-5. Contribuer
+## Contribuer
 Si vous souhaitez contribuer à ce projet, n'hésitez pas à ouvrir un issue ou à soumettre une pull request. Toute contribution est la bienvenue, mais assurez-vous de respecter les bonnes pratiques de codage et de maintenir la cohérence avec le style du projet.
 
 ## License
