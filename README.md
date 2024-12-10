@@ -77,7 +77,6 @@ La partie Bonus du projet Libft inclut des fonctionnalités supplémentaires, te
 4. Pour compiler et inclure les fonctionnalités bonus, il suffit de lancer la commande suivante :
 
    ```bash
-      Copier le code
       make bonus
 
 5. Contribuer
