@@ -2,7 +2,7 @@
 
 ## Description
 
-Libft est un projet dans le cadre du cursus de l'École 42. Il consiste à recréer certaines fonctions de la librairie standard C, tout en respectant les bonnes pratiques de développement, notamment la gestion de la mémoire et les conventions de l'école. Ce projet est essentiel car il permet de se familiariser avec les fonctions de manipulation de chaînes de caractères, de gestion de la mémoire, et de manipulation de fichiers. À travers ce projet, l'objectif est de prouver sa capacité à écrire des fonctions efficaces, robustes et maintenables.
+Libft est le premier projet dans le cadre du cursus de l'École 42. Il consiste à recréer certaines fonctions de la librairie standard C, tout en respectant les bonnes pratiques de développement, notamment la gestion de la mémoire et les conventions de l'école. Ce projet est essentiel car il permet de se familiariser avec les fonctions de manipulation de chaînes de caractères, de gestion de la mémoire, et de manipulation de fichiers. À travers ce projet, l'objectif est de prouver sa capacité à écrire des fonctions efficaces, robustes et maintenables.
 
 ## Fonctionnalités
 
