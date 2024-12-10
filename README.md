@@ -83,4 +83,5 @@ La partie Bonus du projet Libft inclut des fonctionnalités supplémentaires, te
 Si vous souhaitez contribuer à ce projet, n'hésitez pas à ouvrir un issue ou à soumettre une pull request. Toute contribution est la bienvenue, mais assurez-vous de respecter les bonnes pratiques de codage et de maintenir la cohérence avec le style du projet.
 
 ## License
-Ce projet est sous licence Licence de l’École 42. Vous êtes libre de l'utiliser pour vos propres projets, mais ne pouvez pas le redistribuer à des fins commerciales.
+
+Ce projet est sous la licence **[Licence de l’École 42](https://www.42.fr/)**. Vous êtes libre de l'utiliser pour vos propres projets, mais ne pouvez pas le redistribuer à des fins commerciales.
