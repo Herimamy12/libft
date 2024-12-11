@@ -80,9 +80,21 @@ La partie Bonus du projet Libft inclut des fonctionnalités supplémentaires, te
    ```bash
       make bonus
 
-## Contribuer
-Si vous souhaitez contribuer à ce projet, n'hésitez pas à ouvrir un issue ou à soumettre une pull request. Toute contribution est la bienvenue, mais assurez-vous de respecter les bonnes pratiques de codage et de maintenir la cohérence avec le style du projet.
+## Contribution
 
-## License
+Les contributions à ce projet sont les bienvenues ! Si vous souhaitez participer, voici les étapes à suivre :
 
-Ce projet est sous la **[Licence de l’École 42](https://42antananarivo.mg/mentions-legales/)**. Vous êtes libre de l'utiliser pour vos propres projets, mais ne pouvez pas le redistribuer à des fins commerciales.
+1. Forkez ce projet.
+2. Créez une branche pour chaque fonctionnalité ou correction de bug.
+3. Assurez-vous que vos modifications ne cassent pas l'existant et que toutes les fonctionnalités sont correctement testées.
+4. Soumettez une Pull Request pour que vos modifications puissent être examinées et fusionnées.
+
+Nous vous encourageons également à ajouter des tests unitaires pour garantir la stabilité du projet et éviter toute régression.
+
+## Remerciements
+
+Merci à l'école 42 pour cette incroyable opportunité d'apprentissage et pour le soutien de la communauté. Un grand merci également à tous ceux qui ont contribué directement ou indirectement à ce projet.
+
+#### Auteurs
+
+- [Herimamy12](https://github.com/Herimamy12)
